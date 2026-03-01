@@ -1,13 +1,13 @@
-# ML Challenge: Fault Detection in Device Activity
-Project Description
+## ML Challenge: Fault Detection in Device Activity
+#Project Description:
 This project aims to build a classification model to predict fault conditions in devices based on 47 numerical features. The task involves data preprocessing, training a machine learning model, evaluating its performance, and generating a submission file with predictions for unseen test data. The target variable 'Class' indicates whether a device is operating under normal conditions (0) or exhibiting a faulty condition (1).
 
-Dataset
+#Dataset
 The dataset consists of two CSV files:
 
 TRAIN.csv: Used for training the machine learning model. It contains 47 numerical features (F01-F47) and the target variable 'Class'.
 TEST.csv: Used for generating predictions. It contains 47 numerical features (F01-F47) and an 'ID' column, but no 'Class' column.
-Model and Performance
+#Model and Performance
 A RandomForestClassifier was chosen for this task. After preprocessing the data using StandardScaler and splitting the training data into training and validation sets, the model achieved the following performance on the validation set:
 
 Overall Accuracy: 98.45%
@@ -20,7 +20,7 @@ F1-Score (Class 1): 0.98
 AUC Score: 0.99
 The model demonstrates excellent discriminative power and high performance across both classes.
 
-Setup and Usage
+#Setup and Usage
 Prerequisites
 To run this notebook, you will need a Python environment with the following libraries installed:
 
@@ -34,7 +34,7 @@ pip install pandas scikit-learn matplotlib seaborn
 Data Files
 Ensure that TRAIN.csv and TEST.csv are located in the /content/ directory (or adjust the file paths in the notebook accordingly).
 
-Running the Notebook
+#Running the Notebook
 Clone the repository (if applicable) or download the notebook (.ipynb) file.
 Open the notebook in a Jupyter environment (e.g., Google Colab, Jupyter Lab, Jupyter Notebook).
 Run all cells sequentially. The notebook is structured to perform the following steps:
